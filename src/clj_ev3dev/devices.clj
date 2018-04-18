@@ -122,7 +122,7 @@
 ;; Mapping
 
 (defn- port-name [sensor]
-  (str "cat /sys/class/lego-sensor/" sensor "/port_name"))
+  (str "cat /sys/class/lego-sensor/" sensor "/address"))
 
 (defn- type-name [sensor]
   (str "cat /sys/class/lego-sensor/" sensor "/driver_name"))
